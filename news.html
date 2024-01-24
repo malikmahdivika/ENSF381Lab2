@@ -2,22 +2,28 @@
 =========================================================
 Name        : news.html
 Assignment  : Lab 2 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Mahdi Ansari, William Arthur Philip Louis, Al Malik Mahdivika
+Submission  : January 24, 2024
 Description : A simple HTML file.
 =========================================================
 -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Comprehensive HTML Page</title>
 	<!--Copy and paste remaining tags of the head section from images.html file.-->
+    <title>Comprehensive HTML Page</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="An HTML example">
+            <meta name="keywords" content="HTML, Web Development, Example, img">
+            <meta name="author" content="Al Malik Mahdivika">
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header>
         <h1>Welcome to My HTML Page</h1>
     </header>
+    <br><a href="index.html">Back to Home</a><br>
 
     <nav>
         <ul>
@@ -31,7 +37,7 @@ Description : A simple HTML file.
         <article>
             <h2>Article Title</h2>
 			
-			<p>This is a paragraph in an article section. It demonstrates text formatting, like bold, italic, and marked text.</p>
+			<p>This is a paragraph in an article section. It demonstrates text formatting, like <b>bold</b>, <i>italic</i>, and <mark>marked</mark> text.</p>
 			<!-- To emphasize specific words in the paragraph, apply appropriate HTML tags: 
 			<strong> or <b> for bold text, 
 			<em> or <i> for italic text, and
@@ -40,7 +46,7 @@ Description : A simple HTML file.
 
             <p>Here's a quotation:</p>
             <blockquote cite="http://example.com">
-                This is a blockquote, a section that quotes content from another source.
+                <i>This is a blockquote, a section that quotes content from another source.</i>
             </blockquote>
             <p>The article section typically contains text, images, and other content that forms an independent part of a document.</p>
         </article>
@@ -53,12 +59,20 @@ Description : A simple HTML file.
             <li>First item</li>
             <li>Second item</li>
 			<!--Make a sub-ordered list here-->
+            <ol>
+                <li>First sub-item</li>
+                <li>Second sub-item</li>
+            </ol>
             <li>Third item</li>
         </ol>
         <p>Unordered List:</p>
         <ul>
             <li>Bullet item</li>
 			<!--Make a sub-unordered list here-->
+            <ul>
+                <li>A sub-item</li>
+                <li>More sub-items!</li>
+            </ul>
             <li>Another bullet item</li>
             <li>Yet another bullet item</li>
         </ul>
@@ -74,7 +88,7 @@ Description : A simple HTML file.
             <dt>HTML</dt>
             <dd>Hypertext Markup Language.</dd>
 			<dt>CSS</dt>
-            <dd><!--Add CSS definition here--></dd>
+            <dd><!--Add CSS definition here-->Cascading Style Sheets</dd>
         </dl>
 		
         
@@ -104,21 +118,22 @@ Description : A simple HTML file.
 			<tfoot>
 				<tr>
 					<td>Total</td>
-					<td><!--Put column total here--></td>
-					<td><!--Put column total here--></td>
+					<td><!--Put column total here-->$3800</td>
+					<td><!--Put column total here-->$2700</td>
 				</tr>
 			</tfoot>
         </table>
 		
 		<h3>Images:</h3>
         <p>Adding an image:</p>
-        <img src="example.jpg" alt="Example Image"> <!--Fix addressing issue-->
+        <img src="images/example.jpg" alt="Example Image"> <!--Fix addressing issue-->
     </section>
-
+    <br><a href="index.html">Back to Home</a><br>
     <footer>
-        <p>Footer content, like contact info or copyrights.</p>
+        <!--<p>Footer content, like contact info or copyrights.</p>-->
 		<!--Comment out the above p tag and add a new p tag under this comment.
-			The new p tag must contain {Copy right + your names}.-->	
+			The new p tag must contain {Copy right + your names}.-->
+        <p>&copy; 2024 Mahdi Ansari, William Arthur Philip Louis, Al Malik Mahdivika</p>	
     </footer>
 </body>
 </html>
